@@ -1,0 +1,32 @@
+nav {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  z-index: 1;
+}
+.navContainer {
+  position: relative;
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px;
+}
+.centerContainer {
+  display: flex;
+  gap: 50px;
+}
+.navContainer .centerContainer a {
+  text-decoration: none;
+  color: #fff;
+  font-family: Montserrat;
+}
+
+.navContainer .centerContainer a:hover {
+  text-decoration: underline;
+}
+
+.navContainer .centerContainer a.active {
+  text-decoration: underline;
+}
