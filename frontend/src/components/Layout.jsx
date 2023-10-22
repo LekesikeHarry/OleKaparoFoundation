@@ -5,7 +5,7 @@ import Footer from "./Footer/Footer";
 
 function Layout() {
   return (
-    <div>
+    <div style={{ overflow: "hidden" }}>
       <Nav />
       <main>
         <Outlet />

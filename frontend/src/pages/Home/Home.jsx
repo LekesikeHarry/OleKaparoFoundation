@@ -1,5 +1,4 @@
 import React from "react";
-import "./home.css";
 import Hero from "./sections/Hero";
 import About from "./sections/About";
 

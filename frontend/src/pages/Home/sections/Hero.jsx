@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import HeroBg from "../../../assets/hero-bg.svg";
+import "../homeStyles/hero.css";
 const Hero = () => {
+  const [showTextBox, setShowTextBox] = useState(false);
+
+  useEffect(() => {
+    setShowTextBox(true);
+  }, []);
   return (
     <section className="heroSection">
-      <img src={HeroBg} alt="" />
+      <img src={HeroBg} alt="hero-image" loading="lazy" />
       <div className="heroTextBox">
-        <div className="textBox">
+        <div className={`textBox ${showTextBox ? "show" : ""}`}>
           <h6 style={{ fontWeight: "lighter", fontFamily: "Montserrat" }}>
             Give Hope For Homeless
           </h6>

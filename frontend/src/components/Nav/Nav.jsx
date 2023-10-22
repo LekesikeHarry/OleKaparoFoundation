@@ -1,13 +1,16 @@
 import React from "react";
 import "./nav.css";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import Logo from "../../assets/Logov1.svg";
 
 const Nav = () => {
   return (
     <nav>
       <div className="navContainer">
         <div className="leftContainer">
-          <img src="" alt="logo" />
+          <Link to="/">
+            <img src={Logo} alt="logo" loading="lazy" className="logo" />
+          </Link>
         </div>
         <div className="centerContainer">
           <NavLink exact to="/" activeClassName="activeLink">
