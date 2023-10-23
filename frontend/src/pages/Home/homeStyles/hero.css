@@ -1,0 +1,81 @@
+.heroSection {
+  position: relative;
+  color: white;
+  height: 100vh;
+  width: 100vw;
+}
+.heroSection > img {
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+}
+.heroHeader {
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-size: 72px;
+}
+.heroTextBox {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 220px;
+  text-align: center;
+  z-index: 1;
+}
+.textBox {
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s ease-in-out, transform 3s ease-in-out;
+}
+.textBox.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.btns {
+  display: flex;
+  gap: 30px;
+  margin: 50px 0 0 0;
+}
+
+.heroSection {
+  position: relative;
+}
+
+.heroSection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://images.pexels.com/photos/4314674/pexels-photo-4314674.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  opacity: 0.4;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.heroSection::after {
+  content: "";
+  top: 0;
+  left: 0;
+  background: #219d808c;
+  clip-path: polygon(0 0, 100% 0, 57% 100%, 0% 100%);
+  position: absolute;
+  width: 50em;
+  color: black;
+  height: 100vh;
+  z-index: 0;
+}
+
+.heroTextBox {
+}
