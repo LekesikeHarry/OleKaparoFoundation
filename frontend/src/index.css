@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;1,200;1,700;1,800&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Playfair Display", serif;
+  background-color: #fff;
+}
+:root {
+  font-family: "Playfair Display", serif;
+  background-color: #fff;
+}
+
+h1 {
+  font-size: 48px;
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  font-size: 39px;
+  margin: 0;
+  padding: 0;
+}
+h3 {
+  font-size: 32px;
+  margin: 0;
+  padding: 0;
+}
+h4 {
+  font-size: 25px;
+  margin: 0;
+  padding: 0;
+}
+h5 {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+h6 {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+p {
+  font-size: 16px;
+  font-weight: lighter;
+  margin: 0;
+  padding: 0;
+}
+span {
+  font-size: 14px;
+  font-weight: lighter;
+  margin: 0;
+  padding: 0;
+}
+/* Buttons */
+
+.primaryButton {
+  background: #219d80;
+  display: inline-flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-family: "Playfair Display", serif;
+}
+.secondaryButton {
+  border: 2px solid #219d80;
+  cursor: pointer;
+  color: white;
+  display: inline-flex;
+  padding: 10px 20px;
+  align-items: flex-start;
+  gap: 10px;
+  font-family: "Playfair Display", serif;
+  background: transparent;
+}
+.tertiaryButton {
+  cursor: pointer;
+  background: #219d80;
+  color: white;
+  display: inline-flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-family: "Playfair Display", serif;
+}

@@ -1,0 +1,63 @@
+nav {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  z-index: 1;
+}
+.navContainer {
+  position: relative;
+  display: flex;
+  width: 70%;
+  align-items: center;
+  margin: 15px;
+  gap: 5em;
+}
+.leftContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  width: 15em;
+  object-fit: cover;
+}
+.centerContainer {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+.navContainer .centerContainer a {
+  text-decoration: none;
+  color: #fff;
+  font-family: Montserrat;
+  position: relative;
+  transition: transform 1.5s ease-in-out;
+  animation: slideUp1 1.5s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
+  opacity: 0;
+}
+
+@keyframes slideUp1 {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.navContainer .centerContainer a:hover {
+  text-decoration: underline;
+  transform: translateY(-5px);
+}
+.navContainer .centerContainer a:hover::before {
+  transform: scaleX(1);
+}
+
+.navContainer .centerContainer a.active {
+  text-decoration: underline;
+}
