@@ -9,7 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10em;
+  gap: 15em;
   height: 100%;
   width: 100%;
 }
@@ -47,6 +47,39 @@
   position: absolute;
   top: 10rem;
   left: 13rem;
+  display: flex;
+  align-items: center;
+}
+
+.cahrityBox2 > ul {
+  padding: 10px 0 0 23px;
+}
+
+.list {
+  background: linear-gradient(0deg, #fff 0%, #fff 100%),
+    lightgray 50% / cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.list > ul > li:first-child {
+  color: #219d80;
+}
+.list > ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 14px 0;
+  padding: 0 0 0 25px;
+}
+.list ul > li {
+  color: #555;
+  font-family: Montserrat;
+  font-weight: 400;
 }
 .box2 > img {
   width: 100%;

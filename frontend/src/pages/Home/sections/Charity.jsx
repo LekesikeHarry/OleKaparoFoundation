@@ -15,11 +15,19 @@ const Charity = () => {
             />
           </div>
           <div className="box2">
-            <img
-              src="https://images.pexels.com/photos/6180490/pexels-photo-6180490.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
-              alt=""
-              loading="lazy"
-            />
+            <div className="list">
+              <ul>
+                <li>Together, we're going to make the future</li>
+                <li>children where we are able to fulfill all</li>
+                <li>
+                  their requirements to keep them safe from withered world
+                </li>
+                <li>
+                  We have already stepped out and start changing the world
+                </li>
+                <li>Keeping safe them from war, inhumanity</li>
+              </ul>
+            </div>
           </div>
         </div>
         <div className="aboutTextBox">
