@@ -1,0 +1,12 @@
+.ourWorkSection {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 100px;
+}
+
+.worksCard {
+  max-width: 300px;
+}
+.worksCard > img {
+  width: 100%;
+}
