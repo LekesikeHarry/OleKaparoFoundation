@@ -1,0 +1,54 @@
+.testimonialSection {
+  background: #252a34d9;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3em;
+}
+.testimonial > h6 {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+}
+.testimonial > h2 {
+  font-family: Playfair Display;
+  font-size: 39px;
+  font-style: normal;
+  font-weight: 700;
+}
+.testimonial > h5 {
+  font-family: Playfair Display;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.testimonial > span {
+  font-family: Montserrat;
+  margin-bottom: 32px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+}
+.testimonial > p {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: lighter;
+  text-align: center;
+}
+.testimonial > img {
+  margin: 50px 0;
+  width: 8em;
+  height: 8em;
+  border-radius: 50%;
+  object-fit: cover;
+}
