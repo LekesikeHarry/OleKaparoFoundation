@@ -8,7 +8,7 @@ nav {
 .navContainer {
   position: relative;
   display: flex;
-  width: 70%;
+  width: 80%;
   align-items: center;
   margin: 15px;
   gap: 5em;
