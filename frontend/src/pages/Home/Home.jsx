@@ -4,6 +4,7 @@ import About from "./sections/About";
 import Charity from "./sections/Charity";
 import OurWork from "./sections/OurWork";
 import Testimonials from "./sections/Testimonials";
+import Articles from "./sections/Articles";
 
 export default function Home() {
   return (
@@ -13,7 +14,8 @@ export default function Home() {
       <Charity />
       <OurWork />
       <Testimonials />
-      <OurWork />
+      <p>add teams section</p>
+      <Articles />
     </>
   );
 }
