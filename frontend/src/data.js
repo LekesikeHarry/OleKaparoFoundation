@@ -1,3 +1,33 @@
+export const teamMembers = [
+  {
+    id: 0,
+    profileImg:
+      "https://globalpeace.org/wp-content/uploads/2022/12/Hon.-Francis-Xavier-Ole-Kaparo.jpg",
+    name: "Francis Ole Kaparo",
+    designation: "Founder",
+  },
+  {
+    id: 1,
+    profileImg:
+      "https://globalpeace.org/wp-content/uploads/2022/12/Hon.-Francis-Xavier-Ole-Kaparo.jpg",
+    name: "John Doe",
+    designation: "lorem ipsum",
+  },
+  {
+    id: 2,
+    profileImg:
+      "https://globalpeace.org/wp-content/uploads/2022/12/Hon.-Francis-Xavier-Ole-Kaparo.jpg",
+    name: "Paul Lee",
+    designation: "lorem ipsum",
+  },
+  {
+    id: 3,
+    profileImg:
+      "https://globalpeace.org/wp-content/uploads/2022/12/Hon.-Francis-Xavier-Ole-Kaparo.jpg",
+    name: "Willy Bunto",
+    designation: "lorem ipsum",
+  },
+];
 export const worksData = [
   {
     id: 0,

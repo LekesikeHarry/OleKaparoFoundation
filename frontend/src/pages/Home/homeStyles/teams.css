@@ -1,0 +1,32 @@
+.teamsSection {
+  width: 65vw;
+  display: flex;
+  flex-direction: column;
+  gap: 4em;
+  padding: 9em;
+  align-items: flex-start;
+}
+.teamLists {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+.teamItem {
+  text-align: center;
+}
+.imgContainer {
+  /* border: 2px solid lightgray; */
+}
+.imgContainer > img {
+  width: 15em;
+  height: 15em;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.separator {
+  height: 15em;
+}
+.separator:last-child {
+  display: none;
+}
