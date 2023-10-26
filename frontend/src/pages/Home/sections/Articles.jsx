@@ -1,14 +1,15 @@
 import React from "react";
+import { articlesData } from "../../../data";
 import "../homeStyles/works.css";
+import "../homeStyles/articles.css";
 import Carousel from "../../../components/Carousel/Carousel";
-import { worksData } from "../../../data";
 
-const OurWork = () => {
+const Articles = () => {
   return (
-    <section className="ourWorkSection">
+    <section className="articlesSection">
       <div className="worksTop">
         <h6>
-          Latest Causes{" "}
+          Latest News{" "}
           <span
             style={{
               fontWeight: "lighter",
@@ -19,17 +20,13 @@ const OurWork = () => {
             &#9473;&#9473;&#9473;&#9473;
           </span>{" "}
         </h6>
-        <h2>
-          Find the popular cause <br />
-          and donate them​
-        </h2>
+        <h2>Articles You May Read</h2>
       </div>
-
       <div className="worksInnerContainer">
-        <Carousel data={worksData} buttonTxt="Donate Now!" />{" "}
+        <Carousel data={articlesData} buttonTxt="Read More" />{" "}
       </div>
     </section>
   );
 };
 
-export default OurWork;
+export default Articles;
