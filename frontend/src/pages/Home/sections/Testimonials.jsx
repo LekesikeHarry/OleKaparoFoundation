@@ -31,6 +31,7 @@ const Testimonials = () => {
         <img
           src="https://globalpeace.org/wp-content/uploads/2022/12/Hon.-Francis-Xavier-Ole-Kaparo.jpg"
           alt="profile-image"
+          loading="lazy"
         />
         <h5>Hon. Francis Xavier Ole Kaparo</h5>
         <span>Founder</span>
