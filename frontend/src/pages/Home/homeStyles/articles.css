@@ -1,0 +1,6 @@
+.articlesSection {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 9em;
+  gap: 4em;
+}
