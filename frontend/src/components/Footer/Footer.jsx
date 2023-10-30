@@ -126,7 +126,7 @@ const Footer = () => {
                 {SocialLinks.map((item) => {
                   return (
                     <Link to="/">
-                      <img src={item.icon} alt="" />
+                      <img src={item.icon} alt="social-icons" loading="lazy" />
                     </Link>
                   );
                 })}

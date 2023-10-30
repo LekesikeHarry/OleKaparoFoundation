@@ -6,18 +6,16 @@ const Teams = () => {
   return (
     <section className="teamsSection">
       <div className="teamsHeader">
-        <h3>
-          Our Team{" "}
-          <span
-            style={{
-              fontWeight: "lighter",
-              color: "lightgray",
-              fontSize: "20px",
-            }}
-          >
-            &#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;
-          </span>{" "}
-        </h3>
+        <h3>Our Team </h3>
+        <span
+          style={{
+            fontWeight: "lighter",
+            color: "lightgray",
+            fontSize: "20px",
+          }}
+        >
+          &#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;
+        </span>{" "}
       </div>
       <div className="teamsInnerContainer">
         <div className="teamLists">
@@ -26,7 +24,11 @@ const Teams = () => {
               <>
                 <div className="teamItem" key={item.id}>
                   <div className="imgContainer">
-                    <img src={item.profileImg} alt="team-image" />
+                    <img
+                      src={item.profileImg}
+                      alt="team-image"
+                      loading="lazy"
+                    />
                   </div>
                   <hr />
                   <p className="name">{item.name}</p>

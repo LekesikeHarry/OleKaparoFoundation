@@ -3,8 +3,8 @@
   display: flex;
   flex-direction: column;
   gap: 4em;
-  padding: 9em;
-  align-items: flex-start;
+  padding: 3em;
+  align-items: center;
 }
 .teamLists {
   display: flex;
@@ -15,17 +15,21 @@
 .teamItem {
   text-align: center;
 }
+.teamItem > hr {
+  color: #999;
+}
 .imgContainer {
   /* border: 2px solid lightgray; */
 }
 .imgContainer > img {
-  width: 15em;
-  height: 15em;
+  width: 12em;
+  height: 12em;
   object-fit: cover;
   border-radius: 50%;
 }
 .separator {
   height: 15em;
+  color: #999;
 }
 .separator:last-child {
   display: none;

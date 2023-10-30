@@ -102,3 +102,20 @@ export const articlesData = [
     body: "Lorem ipsum dolor sit amet, consete sadipscing elitr, sed diam nonumy....",
   },
 ];
+export const HeroData = [
+  {
+    id: 0,
+    page: "Landing",
+    title: "Give Hope For Homeless",
+    subtitle: "Helping each other can make world better",
+    description:
+      "We Seek out world changers and difference makers around the globe, and equip them to fulfill their unique purpose.",
+  },
+  {
+    id: 1,
+    page: "About",
+    title: "About Us",
+    subtitle: "Home/About-Us",
+    description: "",
+  },
+];
