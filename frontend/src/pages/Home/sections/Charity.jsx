@@ -56,7 +56,8 @@ const Charity = () => {
           <div className="cards">
             <div className="missionCard">
               <div className="cardTitle">
-                <img src={missionIcon} alt="" /> <h5>Our Mission</h5>{" "}
+                <img src={missionIcon} alt="mission-icon" loading="lazy" />{" "}
+                <h5>Our Mission</h5>{" "}
               </div>
               <span style={{ fontFamily: "Montserrat" }}>
                 Lorem ipsum dolor sit amet, <br />
@@ -66,7 +67,8 @@ const Charity = () => {
             <div className="vissionCard">
               {" "}
               <div className="cardTitle">
-                <img src={vissionIcon} alt="" /> <h5>Our Vission</h5>{" "}
+                <img src={vissionIcon} alt="vission-icon" loading="lazy" />{" "}
+                <h5>Our Vission</h5>{" "}
               </div>
               <span style={{ fontFamily: "Montserrat" }}>
                 Lorem ipsum dolor sit amet, <br />

@@ -47,13 +47,14 @@ const Carousel = ({ data, buttonTxt }) => {
             <img
               src="https://images.pexels.com/photos/1686467/pexels-photo-1686467.jpeg?auto=compress&cs=tinysrgb&w=1600"
               alt="our-works-image"
+              loading="lazy"
             />
 
             <div className="cardDesc">
               {item.author && item.date ? (
                 <div className="cardHeader">
                   <div className="authorCont">
-                    <img src={AuthorIcon} alt="author-icon" />
+                    <img src={AuthorIcon} alt="author-icon" loading="lazy" />
                     <p
                       style={{
                         color: "#999",
@@ -70,7 +71,7 @@ const Carousel = ({ data, buttonTxt }) => {
                   </div>
 
                   <div className="dateCont">
-                    <img src={DateIcon} alt="date-icon" />
+                    <img src={DateIcon} alt="date-icon" loading="lazy" />
                     <p
                       style={{
                         color: "#999",
