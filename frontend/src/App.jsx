@@ -4,6 +4,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Login from "./pages/Login&Registration/Login";
+import { HeroData } from "./data";
 
 function App() {
   const router = createBrowserRouter([
@@ -13,11 +14,11 @@ function App() {
       children: [
         {
           path: "/",
-          element: <Home />,
+          element: <Home data={HeroData} />,
         },
         {
           path: "/about",
-          element: <About />,
+          element: <About data={HeroData} />,
         },
       ],
     },

@@ -1,6 +1,6 @@
 import React from "react";
 import "../homeStyles/about.css";
-const About = () => {
+const AboutUs = () => {
   return (
     <section className="aboutSection">
       <div className="aboutInnerContainer">
@@ -49,4 +49,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutUs;
