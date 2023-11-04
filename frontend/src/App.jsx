@@ -4,7 +4,9 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Login from "./pages/Login&Registration/Login";
-import { HeroData } from "./data";
+import { HeroData, worksData } from "./data";
+import OurWorksPage from "./pages/OurWorks/OurWorksPage";
+import SinglePostPage from "./pages/OurWorks/SinglePostPage";
 
 function App() {
   const router = createBrowserRouter([
@@ -19,6 +21,14 @@ function App() {
         {
           path: "/about",
           element: <About data={HeroData} />,
+        },
+        {
+          path: "/our-work",
+          element: <OurWorksPage data={HeroData} />,
+        },
+        {
+          path: "/our-work/:worksId",
+          element: <SinglePostPage data={worksData} />,
         },
       ],
     },

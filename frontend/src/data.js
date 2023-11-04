@@ -59,6 +59,30 @@ export const worksData = [
     description: "Donate for poor peoples treatment and medicine.",
     body: "Lorem ipsum dolor sit amet, consete sadipscing elitr, sed diam nonumy....",
   },
+  {
+    id: 5,
+    title: "Homeless",
+    description: "Donate for poor peoples treatment and medicine.",
+    body: "Lorem ipsum dolor sit amet, consete sadipscing elitr, sed diam nonumy....",
+  },
+  {
+    id: 6,
+    title: "Medical",
+    description: "Donate for poor peoples treatment and medicine.",
+    body: "Lorem ipsum dolor sit amet, consete sadipscing elitr, sed diam nonumy....",
+  },
+  {
+    id: 7,
+    title: "Food",
+    description: "Donate for poor peoples treatment and medicine.",
+    body: "Lorem ipsum dolor sit amet, consete sadipscing elitr, sed diam nonumy....",
+  },
+  {
+    id: 8,
+    title: "Homeless",
+    description: "Donate for poor peoples treatment and medicine.",
+    body: "Lorem ipsum dolor sit amet, consete sadipscing elitr, sed diam nonumy....",
+  },
 ];
 export const articlesData = [
   {
@@ -110,12 +134,5 @@ export const HeroData = [
     subtitle: "Helping each other can make world better",
     description:
       "We Seek out world changers and difference makers around the globe, and equip them to fulfill their unique purpose.",
-  },
-  {
-    id: 1,
-    page: "About",
-    title: "About Us",
-    subtitle: "Home/About-Us",
-    description: "",
   },
 ];

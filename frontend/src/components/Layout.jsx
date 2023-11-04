@@ -10,6 +10,7 @@ function Layout() {
       <main>
         <Outlet />
       </main>
+      {/* add partners section use this  filter: grayscale(100%); for the logo to go black and white */}
       <Footer />
     </div>
   );
