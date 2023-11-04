@@ -1,30 +1,34 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef, useCallback } from "react";
 import "../homeStyles/stats.css";
 import PeopleRaisedIcon from "../../../assets/People-Raise-icon.svg";
 import VolunteerIcon from "../../../assets/Volunteer-icon.svg";
 import PoorPeopleSavedIcon from "../../../assets/Poor-People-Saved-icon.svg";
 import CountryMemberIcon from "../../../assets/Country-Member-icon.svg";
 const Stats = () => {
+  const highlightedSectionRef = useRef(null);
+
+  const handleScroll = useCallback(() => {
+    const highlightedSection = highlightedSectionRef.current;
+    const rect = highlightedSection.getBoundingClientRect();
+    const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
+    if (isVisible) {
+      highlightedSection.classList.add("animate");
+    } else {
+      highlightedSection.classList.remove("animate");
+    }
+  }, []);
+
   useEffect(() => {
-    const handleScroll = () => {
-      const highlightedSection = document.querySelector(".highlighted-section");
-      const rect = highlightedSection.getBoundingClientRect();
-      const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
-
-      if (isVisible) {
-        highlightedSection.classList.add("animate");
-      } else {
-        highlightedSection.classList.remove("animate");
-      }
-    };
-
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [handleScroll]);
   return (
-    <section className="statsSection highlighted-section">
+    <section
+      ref={highlightedSectionRef}
+      className="statsSection highlighted-section"
+    >
       {" "}
       <div className="statsTop">
         <h6>

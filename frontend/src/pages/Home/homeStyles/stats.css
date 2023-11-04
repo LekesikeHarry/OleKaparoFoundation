@@ -18,6 +18,7 @@
   gap: 1em;
 }
 .statsCard {
+  border: 1px solid #0000001f;
   background: #219d8014;
   width: 13em;
   min-height: 17em;
@@ -47,5 +48,5 @@
 }
 
 .highlighted-section.animate .statsDigits {
-  animation: increaseNumbers 1s ease-in-out;
+  animation: increaseNumbers 3s ease-in-out;
 }

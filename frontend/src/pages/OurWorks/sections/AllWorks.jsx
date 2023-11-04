@@ -1,9 +1,8 @@
 import React from "react";
 import "../../../components/Carousel/carousel.css";
 import "../workPageStyles/worksPage.css";
-import { worksData } from "../../../data";
 import { Link } from "react-router-dom";
-const AllWorks = () => {
+const AllWorks = ({ data }) => {
   return (
     <section className="worksPageSection">
       <div className="worksTop">
@@ -25,7 +24,7 @@ const AllWorks = () => {
         </h2>
       </div>
       <div className="worksCardContainer">
-        {worksData.map((item) => {
+        {data.map((item) => {
           return (
             <>
               <div className="worksCard" key={item.id}>
@@ -40,7 +39,6 @@ const AllWorks = () => {
                     style={{
                       color: "#219D80",
                       fontWeight: "600",
-
                       fontFamily: "Montserrat",
                     }}
                   >

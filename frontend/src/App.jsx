@@ -6,13 +6,15 @@ import About from "./pages/About/About";
 import Login from "./pages/Login&Registration/Login";
 import { HeroData, worksData } from "./data";
 import OurWorksPage from "./pages/OurWorks/OurWorksPage";
-import SinglePostPage from "./pages/OurWorks/SinglePostPage";
+import SingleWorksPage from "./pages/OurWorks/SingleWorksPage";
+import ErrorPage from "./pages/ErrorPage/ErrorPage";
 
 function App() {
   const router = createBrowserRouter([
     {
       path: "/",
       element: <Layout />,
+      errorElement: <ErrorPage />,
       children: [
         {
           path: "/",
@@ -28,7 +30,7 @@ function App() {
         },
         {
           path: "/our-work/:worksId",
-          element: <SinglePostPage data={worksData} />,
+          element: <SingleWorksPage data={worksData} />,
         },
       ],
     },

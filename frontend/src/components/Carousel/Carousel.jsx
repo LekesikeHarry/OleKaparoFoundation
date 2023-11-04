@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "./carousel.css";
 import AuthorIcon from "../../assets/author-icon.svg";
 import DateIcon from "../../assets/calendar-icon.svg";
+import { Link } from "react-router-dom";
 
 const Carousel = ({ data, buttonTxt }) => {
   const settings = {
@@ -114,7 +115,13 @@ const Carousel = ({ data, buttonTxt }) => {
                 {" "}
                 {item.body}
               </span>
-              <button className="primaryButton">{buttonTxt}</button>
+              <Link
+                to={`/our-work/${item.id}`}
+                className="primaryButton"
+                style={{ textDecoration: "none" }}
+              >
+                {buttonTxt}
+              </Link>
             </div>
           </div>
         );

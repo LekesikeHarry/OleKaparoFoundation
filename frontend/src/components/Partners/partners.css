@@ -1,0 +1,11 @@
+.partnersSection {
+  padding: 5em 9em;
+}
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logos > img {
+  width: 15em;
+}

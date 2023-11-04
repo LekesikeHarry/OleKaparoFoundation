@@ -1,12 +1,11 @@
 import { useParams } from "react-router-dom";
 
-const SinglePostPage = ({ data }) => {
+const SingleWorksPage = ({ data }) => {
   const { worksId } = useParams();
+  const workId = parseInt(worksId); // Convert worksId to a number
 
   // Find the post with the matching postId in the data array
-  const work = data.find((item) => item.id === worksId);
-
-  console.log(work);
+  const work = data.find((item) => item.id === workId);
   if (!work) {
     return <div>Post not found</div>;
   }
@@ -20,4 +19,4 @@ const SinglePostPage = ({ data }) => {
   );
 };
 
-export default SinglePostPage;
+export default SingleWorksPage;
