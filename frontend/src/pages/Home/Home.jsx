@@ -6,6 +6,7 @@ import Testimonials from "./sections/Testimonials";
 import Articles from "./sections/Articles";
 import Teams from "./sections/Teams";
 import AboutUs from "./sections/AboutUs";
+import Stats from "./sections/Stats";
 
 export default function Home({ data }) {
   return (
@@ -15,6 +16,7 @@ export default function Home({ data }) {
       <Charity />
       <OurWork />
       <Testimonials />
+      <Stats />
       <Teams />
       <Articles />
     </>

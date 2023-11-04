@@ -4,7 +4,9 @@ const SinglePostPage = ({ data }) => {
   const { worksId } = useParams();
 
   // Find the post with the matching postId in the data array
-  const work = data.find((work) => work.id === worksId);
+  const work = data.find((item) => item.id === worksId);
+
+  console.log(work);
   if (!work) {
     return <div>Post not found</div>;
   }

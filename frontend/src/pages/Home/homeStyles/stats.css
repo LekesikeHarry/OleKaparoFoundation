@@ -1,0 +1,51 @@
+.statsSection {
+  display: flex;
+  flex-direction: column;
+  padding: 5em 15em;
+  gap: 4em;
+}
+
+.statsContainer {
+}
+
+.statsTop {
+}
+
+.statsCardsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.statsCard {
+  background: #219d8014;
+  width: 13em;
+  min-height: 17em;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.statsCard > img {
+}
+
+.statsDigits {
+}
+.statsText {
+}
+
+@keyframes increaseNumbers {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.highlighted-section.animate .statsDigits {
+  animation: increaseNumbers 1s ease-in-out;
+}

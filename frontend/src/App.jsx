@@ -24,7 +24,7 @@ function App() {
         },
         {
           path: "/our-work",
-          element: <OurWorksPage data={HeroData} />,
+          element: <OurWorksPage data={HeroData} worksData={worksData} />,
         },
         {
           path: "/our-work/:worksId",
