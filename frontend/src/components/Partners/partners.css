@@ -3,9 +3,12 @@
 }
 .logos {
   display: flex;
+  flex-flow: row-reverse;
   justify-content: center;
   align-items: center;
+  gap: 5em;
 }
 .logos > img {
   width: 15em;
+  filter: brightness(25%);
 }

@@ -42,7 +42,7 @@ const AllWorks = ({ data }) => {
                       fontFamily: "Montserrat",
                     }}
                   >
-                    {item.title}
+                    {item.tag}
                   </p>
 
                   <h5
@@ -50,15 +50,19 @@ const AllWorks = ({ data }) => {
                       fontSize: "18px",
                     }}
                   >
-                    {item.description}
+                    {item.header}
                   </h5>
                   <span
                     style={{
                       fontSize: "13px",
+                      textOverflow: "ellipsis",
+                      lineHeight: "20px",
+                      overflow: "hidden",
+                      maxHeight: "8em",
                     }}
                   >
                     {" "}
-                    {item.body}
+                    {item.body1}
                   </span>
                   <Link
                     to={`/our-work/${item.id}`}

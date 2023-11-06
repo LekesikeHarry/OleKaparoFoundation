@@ -1,4 +1,6 @@
-import { useParams } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
+import Hero2 from "../Home/sections/Hero2";
+import Content from "./sections/Content";
 
 const SingleWorksPage = ({ data }) => {
   const { worksId } = useParams();
@@ -11,11 +13,15 @@ const SingleWorksPage = ({ data }) => {
   }
 
   return (
-    <div>
-      <h1>{work.title}</h1>
-      <p>{work.description}</p>
-      {/* Render other details of the post */}
-    </div>
+    <>
+      <Hero2
+        data={{
+          title: work.header,
+          subTitle: work.tag,
+        }}
+      />
+      <Content data={...work} />
+    </>
   );
 };
 

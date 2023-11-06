@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import HeroBg from "../../../assets/hero-bg.svg";
 import "../homeStyles/hero.css";
+import { Link } from "react-router-dom";
 const Hero = ({ data }) => {
   const [showTextBox, setShowTextBox] = useState(false);
 
@@ -32,7 +33,13 @@ const Hero = ({ data }) => {
         </div>
         <div className="btns">
           <button className="primaryButton">Donate Now!</button>
-          <button className="secondaryButton">Know About Us</button>
+          <Link
+            className="secondaryButton"
+            to="/about"
+            style={{ textDecoration: "none" }}
+          >
+            Know About Us
+          </Link>
         </div>
       </div>
     </section>
