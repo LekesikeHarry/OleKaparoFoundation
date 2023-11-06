@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "./carousel.css";
 import AuthorIcon from "../../assets/author-icon.svg";
 import DateIcon from "../../assets/calendar-icon.svg";
+import { Link } from "react-router-dom";
 
 const Carousel = ({ data, buttonTxt }) => {
   const settings = {
@@ -104,17 +105,27 @@ const Carousel = ({ data, buttonTxt }) => {
                   fontSize: "18px",
                 }}
               >
-                {item.description}
+                {item.header}
               </h5>
               <span
                 style={{
                   fontSize: "13px",
+                  textOverflow: "ellipsis",
+                  lineHeight: "20px",
+                  overflow: "hidden",
+                  maxHeight: "8em",
                 }}
               >
                 {" "}
-                {item.body}
+                {item.body1}
               </span>
-              <button className="primaryButton">{buttonTxt}</button>
+              <Link
+                to={`/our-work/${item.id}`}
+                className="primaryButton"
+                style={{ textDecoration: "none" }}
+              >
+                Read More...
+              </Link>
             </div>
           </div>
         );

@@ -1,0 +1,14 @@
+.worksPageSection {
+  display: flex;
+  flex-direction: column;
+  padding: 5em 15em;
+  gap: 4em;
+}
+.worksCardContainer {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2em;
+}

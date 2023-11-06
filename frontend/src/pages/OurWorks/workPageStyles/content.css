@@ -1,0 +1,43 @@
+.contentContainer {
+  display: flex;
+  width: 75%;
+  justify-content: space-between;
+  gap: 2em;
+}
+.left {
+  width: 70%;
+}
+.blogImageContainer {
+  margin: 1em 0 0 0;
+}
+.blogImageContainer > h2 {
+  padding: 0.5em 0;
+  width: 80%;
+}
+.blogImageContainer > img {
+  width: 100%;
+  height: 15em;
+  object-fit: cover;
+}
+.right {
+  width: 20%;
+}
+.blogDetailsTop {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.5em 0 1em;
+  gap: 3em;
+}
+.iconsContainer {
+  display: inherit;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.subSection > h4 {
+  margin: 24px 0;
+}
+.subSection > p {
+  line-height: 2em;
+}
