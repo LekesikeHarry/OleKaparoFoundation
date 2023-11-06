@@ -11,7 +11,7 @@ const Hero2 = ({ data }) => {
       <img src={HeroBg} alt="hero-image" loading="lazy" />
       <div className="heroTextBox">
         <div className={`textBox ${showTextBox ? "show" : ""}`}>
-          <h1>About Us</h1>
+          <h1>{data.title}</h1>
 
           <p
             style={{
@@ -22,7 +22,7 @@ const Hero2 = ({ data }) => {
               cursor: "pointer",
             }}
           >
-            Home/ About-Us
+            {data.subTitle}
           </p>
         </div>
       </div>
