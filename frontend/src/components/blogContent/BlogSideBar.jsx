@@ -4,35 +4,6 @@ import { Link } from "react-router-dom";
 const BlogSideBar = () => {
   return (
     <div className="contentSideBar">
-      <div className="categoriesContainer">
-        <div className="headContainer">
-          <h4>Categories</h4>
-          <span style={{ color: "#219D80" }}>&#9473;&#9473;&#9473;&#9473;</span>
-        </div>
-
-        <ul className="categs">
-          <Link>
-            Education <span>(3)</span>
-          </Link>
-          <hr />
-          <Link>
-            Food <span>(3)</span>
-          </Link>
-          <hr />
-          <Link>
-            Medical <span>(3)</span>
-          </Link>
-          <hr />
-          <Link>
-            Home <span>(3)</span>
-          </Link>
-          <hr />
-          <Link>
-            Water <span>(3)</span>
-          </Link>
-          <hr />
-        </ul>
-      </div>
       <div className="recentsPost">
         <div className="headContainer">
           <h4> Recent Posts</h4>
@@ -82,6 +53,36 @@ const BlogSideBar = () => {
           </Link>
         </div>
       </div>
+      <div className="categoriesContainer">
+        <div className="headContainer">
+          <h4>Categories</h4>
+          <span style={{ color: "#219D80" }}>&#9473;&#9473;&#9473;&#9473;</span>
+        </div>
+
+        <ul className="categs">
+          <Link>
+            Education <span>(3)</span>
+          </Link>
+          <hr />
+          <Link>
+            Food <span>(3)</span>
+          </Link>
+          <hr />
+          <Link>
+            Medical <span>(3)</span>
+          </Link>
+          <hr />
+          <Link>
+            Home <span>(3)</span>
+          </Link>
+          <hr />
+          <Link>
+            Water <span>(3)</span>
+          </Link>
+          <hr />
+        </ul>
+      </div>
+
       <div className="popularTags">
         <div className="headContainer">
           <h4> Recent Posts</h4>
