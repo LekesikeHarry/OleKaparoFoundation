@@ -9,6 +9,7 @@ import { HeroData, worksData } from "./data";
 import OurWorksPage from "./pages/OurWorks/OurWorksPage";
 import SingleWorksPage from "./pages/OurWorks/SingleWorksPage";
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
+import Blogs from "./pages/Blog/Blogs";
 
 function App() {
   // const [posts, setPosts] = useState({});
@@ -37,7 +38,11 @@ function App() {
         },
         {
           path: "/our-work",
-          element: <OurWorksPage data={HeroData} worksData={worksData} />,
+          element: <OurWorksPage worksData={worksData} />,
+        },
+        {
+          path: "/blogs",
+          element: <Blogs worksData={worksData} />,
         },
         {
           path: "/our-work/:worksId",

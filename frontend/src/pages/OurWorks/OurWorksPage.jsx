@@ -8,7 +8,13 @@ const OurWorksPage = ({ worksData }) => {
   return (
     <>
       <Hero2 data={{ title: "Our Works", subTitle: "Home/ Our-Works" }} />
-      <AllWorks data={worksData} />
+      <AllWorks
+        blogTitle={{
+          title: "Causes",
+          subTitle: "Find the popular cause and donate them",
+        }}
+        data={worksData}
+      />
     </>
   );
 };

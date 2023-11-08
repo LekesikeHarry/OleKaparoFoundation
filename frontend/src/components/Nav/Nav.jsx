@@ -2,6 +2,7 @@ import React from "react";
 import "./nav.css";
 import { Link, NavLink } from "react-router-dom";
 import Logo from "../../assets/Logov1.svg";
+import NavDropDown from "../dropdown/NavDropDown";
 
 const Nav = () => {
   return (
@@ -22,9 +23,7 @@ const Nav = () => {
           <NavLink to="/about" activeClassName="activeLink">
             About
           </NavLink>
-          <NavLink to="/pages" activeClassName="activeLink">
-            Pages
-          </NavLink>
+          {/* <NavDropDown /> */}
           <NavLink to="/blogs" activeClassName="activeLink">
             Blogs
           </NavLink>
