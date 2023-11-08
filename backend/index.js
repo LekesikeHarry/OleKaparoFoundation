@@ -19,6 +19,7 @@ app.use(cors());
 
 app.use(cors({origin:'http://localhost:3000'}));
 // Define your routes and route handlers here
+app.use('/uploads', express.static('uploads'));
 dotenv.config()
 
 app.get('/', (req, res) => {
