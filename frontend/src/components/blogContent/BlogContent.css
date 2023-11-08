@@ -1,0 +1,79 @@
+.contentSideBar {
+  margin: 10em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+}
+.contentSideBar > div {
+  background: #edf7f5;
+  padding: 2em 1em;
+  width: 100%;
+}
+.categs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.categs > a {
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Montserrat";
+  font-weight: 500;
+}
+.categs > a:hover {
+  text-decoration: underline;
+}
+.categs > hr {
+  width: 100%;
+  border: 1px solid #e3e3e3;
+  margin: 0;
+}
+.recents {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin: 1em 0 0;
+}
+.recents > a {
+  text-decoration: none;
+  color: black;
+}
+.recentPost {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.recentImgContainer {
+  width: 100%;
+  height: 6em;
+}
+.recentImgContainer > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7em;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.tags > a {
+  padding: 8px 20px;
+  text-decoration: none;
+}
+.tags > a:hover {
+  text-decoration: underline;
+  transition: 0.6s ease-in-out;
+  border: 2px solid #219d80;
+  background-color: transparent;
+  cursor: pointer;
+  color: black;
+}

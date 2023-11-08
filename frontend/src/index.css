@@ -61,6 +61,11 @@ span {
   margin: 0;
   padding: 0;
 }
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
 /* Buttons */
 
 .primaryButton {
