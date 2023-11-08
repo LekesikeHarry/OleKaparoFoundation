@@ -62,3 +62,12 @@ nav {
 .navContainer .centerContainer a.active {
   text-decoration: underline;
 }
+.dropDown {
+  position: relative;
+  top: 1em;
+}
+
+.dropDownContent {
+  background-color: white;
+  color: black;
+}

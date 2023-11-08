@@ -2,12 +2,12 @@ import React from "react";
 import "../../../components/Carousel/carousel.css";
 import "../workPageStyles/worksPage.css";
 import { Link } from "react-router-dom";
-const AllWorks = ({ data }) => {
+const AllWorks = ({ data, blogTitle }) => {
   return (
     <section className="worksPageSection">
       <div className="worksTop">
         <h6>
-          Latest Causes{" "}
+          Latest {blogTitle.title}{" "}
           <span
             style={{
               fontWeight: "lighter",
@@ -18,10 +18,7 @@ const AllWorks = ({ data }) => {
             &#9473;&#9473;&#9473;&#9473;
           </span>{" "}
         </h6>
-        <h2>
-          Find the popular cause <br />
-          and donate them​
-        </h2>
+        <h2>{blogTitle.subTitle}</h2>
       </div>
       <div className="worksCardContainer">
         {!data ||
