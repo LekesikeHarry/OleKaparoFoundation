@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import Layout from "./components/Layout";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./pages/Home/Home";
@@ -10,6 +11,16 @@ import SingleWorksPage from "./pages/OurWorks/SingleWorksPage";
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
 
 function App() {
+  // const [posts, setPosts] = useState({});
+  // useEffect(() => {
+  //   const getPosts = async () => {
+  //     const res = await axios.get("http://localhost:4000/api/posts/");
+  //     setPosts(res.data);
+  //   };
+  //   getPosts();
+  // }, []);
+
+  // console.log(posts);
   const router = createBrowserRouter([
     {
       path: "/",
