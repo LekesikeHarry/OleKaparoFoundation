@@ -24,58 +24,55 @@ const AllWorks = ({ data }) => {
         </h2>
       </div>
       <div className="worksCardContainer">
-        {data.map((item) => {
-          return (
-            <>
-              <div className="worksCard" key={item.id}>
-                <img
-                  src="https://images.pexels.com/photos/1686467/pexels-photo-1686467.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                  alt="our-works-image"
-                  loading="lazy"
-                />
+        {!data ||
+          data.map((item) => {
+            return (
+              <>
+                <div className="worksCard" key={item.id}>
+                  <img src={item.image} alt="our-works-image" loading="lazy" />
 
-                <div className="cardDesc">
-                  <p
-                    style={{
-                      color: "#219D80",
-                      fontWeight: "600",
-                      fontFamily: "Montserrat",
-                    }}
-                  >
-                    {item.tag}
-                  </p>
+                  <div className="cardDesc">
+                    <p
+                      style={{
+                        color: "#219D80",
+                        fontWeight: "600",
+                        fontFamily: "Montserrat",
+                      }}
+                    >
+                      {item.tag}
+                    </p>
 
-                  <h5
-                    style={{
-                      fontSize: "18px",
-                    }}
-                  >
-                    {item.header}
-                  </h5>
-                  <span
-                    style={{
-                      fontSize: "13px",
-                      textOverflow: "ellipsis",
-                      lineHeight: "20px",
-                      overflow: "hidden",
-                      maxHeight: "8em",
-                    }}
-                  >
-                    {" "}
-                    {item.body1}
-                  </span>
-                  <Link
-                    to={`/our-work/${item.id}`}
-                    className="primaryButton"
-                    style={{ textDecoration: "none" }}
-                  >
-                    Read More..
-                  </Link>
+                    <h5
+                      style={{
+                        fontSize: "18px",
+                      }}
+                    >
+                      {item.header}
+                    </h5>
+                    <span
+                      style={{
+                        fontSize: "13px",
+                        textOverflow: "ellipsis",
+                        lineHeight: "20px",
+                        overflow: "hidden",
+                        maxHeight: "8em",
+                      }}
+                    >
+                      {" "}
+                      {item.body1}
+                    </span>
+                    <Link
+                      to={`/our-work/${item.id}`}
+                      className="primaryButton"
+                      style={{ textDecoration: "none" }}
+                    >
+                      Read More..
+                    </Link>
+                  </div>
                 </div>
-              </div>
-            </>
-          );
-        })}
+              </>
+            );
+          })}
       </div>
     </section>
   );
