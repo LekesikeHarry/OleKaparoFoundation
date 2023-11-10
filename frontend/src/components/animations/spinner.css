@@ -6,13 +6,25 @@
   justify-content: center;
   align-items: center;
   gap: 2em;
-  background: #edf7f5;
   background: -webkit-linear-gradient(
     40deg,
     #edf7f5 0%,
     rgba(33, 158, 129, 0.61) 100%
   );
-  background: linear-gradient(40deg, #edf7f5 0%, rgba(33, 158, 129, 0.61) 100%);
+  background: linear-gradient(40deg, #edf7f5 0%, rgba(0, 116, 89, 0.61) 100%);
+  background-size: 200% 200%;
+  animation: pulse 5s infinite;
+}
+@keyframes pulse {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .spinnerContainer::before {
