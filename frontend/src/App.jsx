@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { Suspense, lazy, useEffect, useState } from "react";
 import axios from "axios";
 import Layout from "./components/Layout";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
@@ -10,6 +10,16 @@ import OurWorksPage from "./pages/OurWorks/OurWorksPage";
 import SingleWorksPage from "./pages/OurWorks/SingleWorksPage";
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
 import Blogs from "./pages/Blog/Blogs";
+import Spinner from "./components/animations/Spinner";
+
+// lazy load
+
+const HomePage = lazy(
+  () =>
+    new Promise((resolve, reject) =>
+      setTimeout(() => resolve(import("./pages/Home/Home")), 5000)
+    )
+);
 
 function App() {
   // const [posts, setPosts] = useState({});
@@ -30,7 +40,7 @@ function App() {
       children: [
         {
           path: "/",
-          element: <Home data={HeroData} />,
+          element: <HomePage data={HeroData} />,
         },
         {
           path: "/about",
@@ -56,7 +66,11 @@ function App() {
     },
   ]);
 
-  return <RouterProvider router={router} />;
+  return (
+    <Suspense fallback={<Spinner />}>
+      <RouterProvider router={router} />
+    </Suspense>
+  );
 }
 
 export default App;
