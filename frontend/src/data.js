@@ -1,3 +1,73 @@
+import FeatIcon1 from "../src/assets/feature-icon-1.svg";
+import FeatIcon2 from "../src/assets/feature-icon-2.svg";
+import FeatIcon3 from "../src/assets/feature-icon-3.svg";
+export const features = [
+  {
+    id: 0,
+    icon: FeatIcon1,
+    title: "Food & Homeless charity",
+    desc: "Lorem ipsum dolor sit amet, consetetur sadipscing sed diam nonumy tempor invidunt ut labore et magna aliquyam erat, sed diam voluptua.....",
+    listItems: [
+      {
+        id: 0,
+        text: "Join your hand with us for a better life",
+      },
+      {
+        id: 1,
+        text: "Join your hand with us for a better life",
+      },
+    ],
+  },
+  {
+    id: 1,
+    icon: FeatIcon2,
+    title: "Food & Homeless charity",
+    desc: "Lorem ipsum dolor sit amet, consetetur sadipscing sed diam nonumy tempor invidunt ut labore et magna aliquyam erat, sed diam voluptua.....",
+    listItems: [
+      {
+        id: 0,
+        text: "Join your hand with us for a better life",
+      },
+      {
+        id: 1,
+        text: "Join your hand with us for a better life",
+      },
+      {
+        id: 2,
+        text: "Join your hand with us for a better life",
+      },
+      {
+        id: 3,
+        text: "children where we are able to fulfill all",
+      },
+    ],
+  },
+  {
+    id: 2,
+    icon: FeatIcon3,
+    title: "Food & Homeless charity",
+    desc: "Lorem ipsum dolor sit amet, consetetur sadipscing sed diam nonumy tempor invidunt ut labore et magna aliquyam erat, sed diam voluptua.....",
+    listItems: [
+      {
+        id: 0,
+        text: "Join your hand with us for a better life",
+      },
+      {
+        id: 1,
+        text: "Join your hand with us for a better life",
+      },
+      {
+        id: 2,
+        text: "Join your hand with us for a better life",
+      },
+      {
+        id: 3,
+        text: "children where we are able to fulfill all",
+      },
+    ],
+  },
+];
+
 export const teamMembers = [
   {
     id: 0,

@@ -12,12 +12,12 @@ import ErrorPage from "./pages/ErrorPage/ErrorPage";
 import Blogs from "./pages/Blog/Blogs";
 import Spinner from "./components/animations/Spinner";
 
-// lazy load
+// lazy load HOMEPAGE
 
 const HomePage = lazy(
   () =>
     new Promise((resolve, reject) =>
-      setTimeout(() => resolve(import("./pages/Home/Home")), 5000)
+      setTimeout(() => resolve(import("./pages/Home/Home")), 3000)
     )
 );
 
