@@ -2,7 +2,7 @@ import React from "react";
 import "./nav.css";
 import { Link, NavLink } from "react-router-dom";
 import Logo from "../../assets/Logov1.svg";
-import NavDropDown from "../dropdown/NavDropDown";
+// import NavDropDown from "../dropdown/NavDropDown";
 
 const Nav = () => {
   return (
@@ -29,7 +29,10 @@ const Nav = () => {
           </NavLink>
         </div>
         <div className="rightContainer">
-          <button className="primaryButton"> Contact Us</button>
+          <NavLink to="contact-us" className="primaryButton">
+            {" "}
+            Contact Us
+          </NavLink>
         </div>
       </div>
     </nav>

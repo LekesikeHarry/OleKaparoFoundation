@@ -11,6 +11,7 @@ import SingleWorksPage from "./pages/OurWorks/SingleWorksPage";
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
 import Blogs from "./pages/Blog/Blogs";
 import Spinner from "./components/animations/Spinner";
+import ContactUs from "./pages/ContactUs/ContactUs";
 
 // lazy load HOMEPAGE
 
@@ -57,6 +58,10 @@ function App() {
         {
           path: "/our-work/:worksId",
           element: <SingleWorksPage data={worksData} />,
+        },
+        {
+          path: "/contact-us",
+          element: <ContactUs />,
         },
       ],
     },

@@ -1,0 +1,40 @@
+.inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+.innerInputs {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 2em 0;
+  width: 100%;
+}
+.topInputs {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.innerInputs > textarea {
+  border: 1px solid #d9d7d7;
+  background: #edf7f5;
+  outline: none;
+}
+.names {
+  display: flex;
+  gap: 1em;
+}
+.others {
+  display: flex;
+  gap: 1em;
+}
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+}
+.inputWrapper > input {
+  border: 1px solid #d9d7d7;
+  background: #edf7f5;
+  padding: 0.7em 4em;
+  outline: none;
+}
