@@ -35,6 +35,7 @@
 .inputWrapper > input {
   border: 1px solid #d9d7d7;
   background: #edf7f5;
-  padding: 0.7em 4em;
+  padding: 1em;
   outline: none;
+  width: 15em;
 }

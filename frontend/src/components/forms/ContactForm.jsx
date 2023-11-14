@@ -24,21 +24,41 @@ const ContactForm = () => {
               <div className="names">
                 <div className="inputWrapper">
                   <label htmlFor="Fname"> First Name</label>
-                  <input type="text" name="Fname" id="Fname" />{" "}
+                  <input
+                    type="text"
+                    name="Fname"
+                    id="Fname"
+                    placeholder="First Name"
+                  />{" "}
                 </div>
                 <div className="inputWrapper">
                   <label htmlFor="Lname"> Last Name</label>
-                  <input type="text" name="Lname" id="Lname" />{" "}
+                  <input
+                    type="text"
+                    name="Lname"
+                    id="Lname"
+                    placeholder="Last Name"
+                  />{" "}
                 </div>
               </div>
               <div className="others">
                 <div className="inputWrapper">
                   <label htmlFor="email">Email</label>
-                  <input type="email" name="email" id="email" />{" "}
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Enter your email.."
+                  />{" "}
                 </div>
                 <div className="inputWrapper">
                   <label htmlFor="Pnumber">Phone Number</label>
-                  <input type="number" name="Pnumber" id="Pnumber" />{" "}
+                  <input
+                    type="number"
+                    name="Pnumber"
+                    id="Pnumber"
+                    placeholder="Phone Number"
+                  />{" "}
                 </div>
               </div>
             </div>
