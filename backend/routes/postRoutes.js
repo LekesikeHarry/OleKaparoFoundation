@@ -1,5 +1,5 @@
 import express from "express";
-import { createPost, deletePost, getAllPost, getPostById } from "../controllers/postController.js";
+import { createPost, deletePost, getAllPost, getPostById, updatePost } from "../controllers/postController.js";
 import { protect } from "../middleware/authMiddleware.js";
 import multer from 'multer';
 
@@ -20,6 +20,7 @@ const router = express.Router();
 router.route("/").post(protect, upload.single('image'), createPost).get(getAllPost);
 router.route('/:id').get(getPostById)
                     .delete(protect, deletePost)
+                    .put(protect, upload.single('image'), updatePost)
 
 
 export default router;
