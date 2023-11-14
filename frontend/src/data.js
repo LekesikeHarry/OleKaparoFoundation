@@ -67,7 +67,26 @@ export const features = [
     ],
   },
 ];
-
+export const galleryImgs = [
+  {
+    link: "https://images.pexels.com/photos/1686463/pexels-photo-1686463.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  },
+  {
+    link: "https://images.pexels.com/photos/2883380/pexels-photo-2883380.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  },
+  {
+    link: "https://images.pexels.com/photos/1108821/pexels-photo-1108821.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  },
+  {
+    link: "https://images.pexels.com/photos/1866654/pexels-photo-1866654.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  },
+  {
+    link: "https://images.pexels.com/photos/19003600/pexels-photo-19003600/free-photo-of-african-children-on-a-field-in-black-and-white.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  },
+  {
+    link: "https://images.pexels.com/photos/4314674/pexels-photo-4314674.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  },
+];
 export const teamMembers = [
   {
     id: 0,
