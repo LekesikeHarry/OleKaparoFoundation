@@ -62,6 +62,17 @@ nav {
 .navContainer .centerContainer a.active {
   text-decoration: underline;
 }
+.rightContainer a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.rightContainer a:hover {
+  border: 2px solid #219d80;
+  cursor: pointer;
+  padding: 12px 24px;
+  background: transparent;
+  transition: 0.3s ease-in-out;
+}
 .dropDown {
   position: relative;
   top: 1em;

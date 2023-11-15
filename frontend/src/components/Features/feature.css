@@ -1,0 +1,54 @@
+.featureContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 15em;
+}
+.bottom {
+  display: flex;
+  gap: 2em;
+  padding: 3em 0 0;
+}
+.bottom > div:nth-child(1) {
+  background-color: #219d80;
+  height: 20em;
+  color: white;
+}
+
+.bottom > div:nth-child(2) {
+  height: 23em;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.bottom > div:nth-child(3) {
+  height: 26em;
+}
+.featureCard {
+  background: #219d8014;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 1em;
+  max-width: 20em;
+  border: 1px solid #0000001f;
+}
+
+.featInnerContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.featInnerContainer > ul {
+  list-style-type: decimal;
+  padding: 0 0 0 1em;
+  line-height: 2em;
+}
+.featInnerContainer > img {
+  height: 7em;
+  width: 7em;
+  object-fit: cover;
+}

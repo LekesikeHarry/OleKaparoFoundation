@@ -1,0 +1,8 @@
+.contactSection {
+  display: flex;
+  display: flex;
+  padding: 5em 0;
+  width: 100vw;
+  justify-content: center;
+  gap: 5em;
+}
