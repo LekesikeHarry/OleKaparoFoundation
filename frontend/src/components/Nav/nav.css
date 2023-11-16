@@ -9,8 +9,8 @@ nav {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 80%;
+  justify-content: space-between;
+  width: 70%;
   margin: 15px;
   gap: 5em;
 }

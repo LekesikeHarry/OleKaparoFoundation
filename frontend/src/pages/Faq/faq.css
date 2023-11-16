@@ -1,0 +1,33 @@
+.faqSection {
+  padding: 5em 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  width: 100vw;
+  background-color: #edf7f5;
+  align-items: center;
+  justify-content: center;
+}
+.faqWrapper {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+.faqImgContainer {
+  width: 20em;
+  height: 20em;
+  border: 1em solid #219d8033;
+}
+.faqImgContainer > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.faqInnerContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.faqRightContainer {
+  width: 55%;
+}

@@ -15,12 +15,12 @@ const SingleWorksPage = ({ data }) => {
   return (
     <>
       <Hero2
-          data={{
-            title: work.header,
-            subTitle: work.tag,
-          }}
+        data={{
+          title: work.header,
+          subTitle: work.tag,
+        }}
       />
-      <Content data={...work} />
+      <Content data={work} />
     </>
   );
 };

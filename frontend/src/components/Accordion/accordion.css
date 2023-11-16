@@ -1,0 +1,29 @@
+/* Accordion.css */
+.accordion {
+  margin-bottom: 10px;
+  overflow: hidden; /* Ensures a smooth transition */
+  transition: height 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+  background-color: white; /* Default background color when closed */
+}
+
+.accordion.open {
+  height: auto; /* Automatically adjust height when open */
+  background-color: #d0e7e2; /* Background color when opened */
+}
+
+.accordion-header {
+  display: flex;
+  align-items: center;
+  padding: 25px;
+  cursor: pointer;
+  border: 1px solid #0000001f;
+}
+
+.icon {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.accordion-details {
+  padding: 10px;
+}

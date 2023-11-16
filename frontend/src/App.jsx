@@ -12,6 +12,7 @@ import ErrorPage from "./pages/ErrorPage/ErrorPage";
 import Blogs from "./pages/Blog/Blogs";
 import Spinner from "./components/animations/Spinner";
 import ContactUs from "./pages/ContactUs/ContactUs";
+import Faq from "./pages/Faq/Faq";
 
 // lazy load HOMEPAGE
 
@@ -62,6 +63,10 @@ function App() {
         {
           path: "/contact-us",
           element: <ContactUs />,
+        },
+        {
+          path: "/faq",
+          element: <Faq />,
         },
       ],
     },
