@@ -31,6 +31,11 @@ const FooterLinks = [
         title: "Our Works",
         link: "/our-work",
       },
+      {
+        id: 4,
+        title: "FAQ's",
+        link: "/faq",
+      },
     ],
   },
   {
