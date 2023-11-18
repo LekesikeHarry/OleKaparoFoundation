@@ -23,7 +23,7 @@ const FooterLinks = [
       },
       {
         id: 2,
-        title: "Our Blogs",
+        title: "Blogs",
         link: "/blogs",
       },
       {

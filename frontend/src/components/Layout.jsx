@@ -8,7 +8,7 @@ function Layout() {
   const location = useLocation();
   return (
     <div style={{ overflow: "hidden" }}>
-      <Nav />
+      <Nav color={"white"} filter={"brightness(1)"} />
       <main>
         <Outlet />
       </main>

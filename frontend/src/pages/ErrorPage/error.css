@@ -1,0 +1,12 @@
+.errorBody {
+  position: absolute;
+  top: 5em;
+}
+.errorImgContainer {
+  background: #edf7f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3em;
+}
