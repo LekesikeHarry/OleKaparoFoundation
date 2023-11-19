@@ -13,6 +13,16 @@ import Blogs from "./pages/Blog/Blogs";
 import Spinner from "./components/animations/Spinner";
 import ContactUs from "./pages/ContactUs/ContactUs";
 import Faq from "./pages/Faq/Faq";
+// data query
+import {
+  QueryClient,
+  QueryClientProvider,
+  useQuery,
+} from "@tanstack/react-query";
+import Register from "./pages/Login&Registration/Register";
+
+//react-query
+const queryClient = new QueryClient();
 
 // lazy load HOMEPAGE
 
@@ -24,16 +34,7 @@ const HomePage = lazy(
 );
 
 function App() {
-  // const [posts, setPosts] = useState({});
-  // useEffect(() => {
-  //   const getPosts = async () => {
-  //     const res = await axios.get("http://localhost:4000/api/posts/");
-  //     setPosts(res.data);
-  //   };
-  //   getPosts();
-  // }, []);
-
-  // console.log(posts);
+  //router
   const router = createBrowserRouter([
     {
       path: "/",
@@ -50,15 +51,15 @@ function App() {
         },
         {
           path: "/our-work",
-          element: <OurWorksPage worksData={worksData} />,
+          element: <OurWorksPage />,
         },
         {
           path: "/blogs",
-          element: <Blogs worksData={worksData} />,
+          element: <Blogs />,
         },
         {
           path: "/our-work/:worksId",
-          element: <SingleWorksPage data={worksData} />,
+          element: <SingleWorksPage />,
         },
         {
           path: "/contact-us",
@@ -74,12 +75,18 @@ function App() {
       path: "/login",
       element: <Login />,
     },
+    {
+      path: "/register",
+      element: <Register />,
+    },
   ]);
 
   return (
-    <Suspense fallback={<Spinner />}>
-      <RouterProvider router={router} />
-    </Suspense>
+    <QueryClientProvider client={queryClient}>
+      <Suspense fallback={<Spinner />}>
+        <RouterProvider router={router} />
+      </Suspense>
+    </QueryClientProvider>
   );
 }
 

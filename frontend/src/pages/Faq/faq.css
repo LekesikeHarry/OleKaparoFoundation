@@ -31,3 +31,34 @@
 .faqRightContainer {
   width: 55%;
 }
+.faqFooter {
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5em 0;
+}
+.faqFooter > h2 {
+  align-self: baseline;
+  margin: 0 0 15px;
+  font-family: Playfair Display;
+  font-size: 39px;
+  font-style: normal;
+  font-weight: 700;
+}
+.faqFooter > p {
+  align-self: baseline;
+  color: #555;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+.faqCardContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3em 0 0;
+}

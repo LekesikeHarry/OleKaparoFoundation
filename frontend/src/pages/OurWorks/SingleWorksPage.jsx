@@ -1,13 +1,21 @@
-import { useLocation, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Hero2 from "../Home/sections/Hero2";
 import Content from "./sections/Content";
+import usePostsQuery from "../../utils/PostQuery";
 
-const SingleWorksPage = ({ data }) => {
+const SingleWorksPage = () => {
+  //query data
+  const { isPending, error, data, isFetching } = usePostsQuery();
+
+  if (isPending) return "Loading...";
+
+  if (error) return "An error has occurred: " + error.message;
+
   const { worksId } = useParams();
-  const workId = parseInt(worksId); // Convert worksId to a number
+  // const workId = parseInt(worksId); // Convert worksId to a number
 
   // Find the post with the matching postId in the data array
-  const work = data.find((item) => item.id === workId);
+  const work = data.find((item) => item._id === worksId);
   if (!work) {
     return <div>Post not found</div>;
   }
@@ -16,8 +24,8 @@ const SingleWorksPage = ({ data }) => {
     <>
       <Hero2
         data={{
-          title: work.header,
-          subTitle: work.tag,
+          title: work.title,
+          subTitle: work.category,
         }}
       />
       <Content data={work} />

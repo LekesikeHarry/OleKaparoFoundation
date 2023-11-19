@@ -33,7 +33,6 @@
   display: inherit;
   justify-content: flex-start;
   align-items: center;
-  gap: 10px;
 }
 .subSection > h4 {
   margin: 24px 0;
