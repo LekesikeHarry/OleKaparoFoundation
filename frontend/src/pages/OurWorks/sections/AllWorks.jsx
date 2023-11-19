@@ -25,7 +25,7 @@ const AllWorks = ({ data, blogTitle }) => {
           data.map((item) => {
             return (
               <>
-                <div className="worksCard" key={item.id}>
+                <div className="worksCard" key={item._id}>
                   <img src={item.image} alt="our-works-image" loading="lazy" />
 
                   <div className="cardDesc">
@@ -36,7 +36,7 @@ const AllWorks = ({ data, blogTitle }) => {
                         fontFamily: "Montserrat",
                       }}
                     >
-                      {item.tag}
+                      {item.category}
                     </p>
 
                     <h5
@@ -44,7 +44,7 @@ const AllWorks = ({ data, blogTitle }) => {
                         fontSize: "18px",
                       }}
                     >
-                      {item.header}
+                      {item.title}
                     </h5>
                     <span
                       style={{
@@ -56,10 +56,10 @@ const AllWorks = ({ data, blogTitle }) => {
                       }}
                     >
                       {" "}
-                      {item.body1}
+                      {item.summary}
                     </span>
                     <Link
-                      to={`/our-work/${item.id}`}
+                      to={`/our-work/${item._id}`}
                       className="primaryButton"
                       style={{ textDecoration: "none" }}
                     >

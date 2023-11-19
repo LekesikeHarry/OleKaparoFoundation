@@ -44,7 +44,7 @@ const Carousel = ({ data, buttonTxt }) => {
     <Slider {...settings}>
       {data.map((item) => {
         return (
-          <div className="worksCard" key={item.id}>
+          <div className="worksCard" key={item._id}>
             <img
               src="https://images.pexels.com/photos/1686467/pexels-photo-1686467.jpeg?auto=compress&cs=tinysrgb&w=1600"
               alt="our-works-image"
@@ -52,7 +52,7 @@ const Carousel = ({ data, buttonTxt }) => {
             />
 
             <div className="cardDesc">
-              {item.author && item.date ? (
+              {item.author ? (
                 <div className="cardHeader">
                   <div className="authorCont">
                     <img src={AuthorIcon} alt="author-icon" loading="lazy" />
@@ -67,7 +67,7 @@ const Carousel = ({ data, buttonTxt }) => {
                         overflow: "hidden",
                       }}
                     >
-                      {item.author}
+                      {item.author.username}
                     </p>
                   </div>
 
@@ -84,7 +84,7 @@ const Carousel = ({ data, buttonTxt }) => {
                         overflow: "hidden",
                       }}
                     >
-                      {item.date}
+                      {new Date(item.createdAt).toLocaleDateString()}
                     </p>
                   </div>
                 </div>
@@ -105,7 +105,7 @@ const Carousel = ({ data, buttonTxt }) => {
                   fontSize: "18px",
                 }}
               >
-                {item.header}
+                {item.title}
               </h5>
               <span
                 style={{
@@ -117,10 +117,10 @@ const Carousel = ({ data, buttonTxt }) => {
                 }}
               >
                 {" "}
-                {item.body1}
+                {item.summary}
               </span>
               <Link
-                to={`/our-work/${item.id}`}
+                to={`/our-work/${item._id}`}
                 className="primaryButton"
                 style={{ textDecoration: "none" }}
               >

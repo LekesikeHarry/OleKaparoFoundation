@@ -1,10 +1,16 @@
 import React from "react";
-import { articlesData } from "../../../data";
 import "../homeStyles/works.css";
 import "../homeStyles/articles.css";
 import Carousel from "../../../components/Carousel/Carousel";
+import usePostsQuery from "../../../utils/PostQuery";
 
 const Articles = () => {
+  //query data
+  const { isPending, error, data, isFetching } = usePostsQuery();
+
+  if (isPending) return "Loading...";
+
+  if (error) return "An error has occurred: " + error.message;
   return (
     <section className="articlesSection">
       <div className="worksTop">
@@ -23,7 +29,7 @@ const Articles = () => {
         <h2>Articles You May Read</h2>
       </div>
       <div className="worksInnerContainer">
-        <Carousel data={articlesData} buttonTxt="Read More" />{" "}
+        <Carousel data={data} buttonTxt="Read More" />{" "}
       </div>
     </section>
   );

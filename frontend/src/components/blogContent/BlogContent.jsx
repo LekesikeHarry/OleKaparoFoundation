@@ -8,8 +8,8 @@ const BlogContent = ({ data }) => {
   return (
     <>
       <div className="blogImageContainer">
-        <h2>{data.header}</h2>
-        <img src={data.img} alt="blog-image" loading="lazy" />
+        <h2>{data.title}</h2>
+        <img src={data.image} alt="blog-image" loading="lazy" />
         <div className="blogDetailsTop">
           <div className="iconsContainer">
             <img src={AuthorIcon} alt="" className="icon" />
@@ -24,7 +24,7 @@ const BlogContent = ({ data }) => {
                 overflow: "hidden",
               }}
             >
-              {data.author}
+              {data.author.username}
             </p>
           </div>
           <div className="iconsContainer">
@@ -41,7 +41,7 @@ const BlogContent = ({ data }) => {
                 overflow: "hidden",
               }}
             >
-              {data.date}
+              {new Date(data.createdAt).toLocaleDateString()}
             </p>
           </div>
           <div className="iconsContainer">
@@ -64,18 +64,18 @@ const BlogContent = ({ data }) => {
       </div>
       <div className="blogDetailsContainer">
         <div className="subSection">
-          <h4>{data.title1}</h4>
-          <p>{data.body1}</p>
+          <h4>{data.title}</h4>
+          <p>{data.summary}</p>
         </div>
         {/* <Testimonials /> */}
         <div className="subSection">
-          <h4>{data.title2}</h4>
-          <p>{data.body2}</p>
+          <h4>{data.title}</h4>
+          <p>{data.summary}</p>
         </div>
 
         <div className="subSection">
-          <h4>{data.title3}</h4>
-          <p>{data.body3}</p>
+          <h4>{data.title}</h4>
+          <p>{data.summary}</p>
         </div>
       </div>
     </>
