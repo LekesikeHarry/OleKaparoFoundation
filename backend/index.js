@@ -6,6 +6,7 @@ import bodyParser from'body-parser'
 import cors from "cors"
 import userRoutes from './routes/userRoutes.js'
 import postRoutes from './routes/postRoutes.js'
+import eventRoutes from './routes/eventRoutes.js'
 import dotenv from 'dotenv'
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -19,6 +20,7 @@ app.use(cors());
 
 app.use(cors({origin:'http://localhost:3000'}));
 // Define your routes and route handlers here
+app.use('/uploads', express.static('uploads'));
 dotenv.config()
 
 app.get('/', (req, res) => {
@@ -33,6 +35,7 @@ app.listen(port, () => {
 
 app.use('/api/users/', userRoutes)
 app.use('/api/posts/', postRoutes)
+app.use('/api/events', eventRoutes)
 // app.post('/register', async (req, res) => {
 //     try {
 //         const { username, password } = req.body;
