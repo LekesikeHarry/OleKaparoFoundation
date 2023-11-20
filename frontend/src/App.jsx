@@ -34,12 +34,17 @@ const HomePage = lazy(
 );
 
 function App() {
+  //1. logged in or not
+  //2. if user
+  //3. if admin
+
   //router
   const router = createBrowserRouter([
     {
       path: "/",
       element: <Layout />,
       errorElement: <ErrorPage />,
+
       children: [
         {
           path: "/",
