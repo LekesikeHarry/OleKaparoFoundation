@@ -9,11 +9,12 @@ import { dirname } from 'path';
 const createPost = async (req, res, next) => {
     try {
         const ImagePath = req.file.path;
-        const { title, summary, content } = req.body;
+        const { title, summary, content, category } = req.body;
         const post = new Post({
             title,
             summary,
             content,
+            category,
             image: ImagePath,
             author: req.user._id
         })
@@ -38,11 +39,12 @@ const updatePost =  async (req, res, next) => {
     }
 
     const oldImagePath = post.image;
-    const {title, summary, content} = req.body;
+    const {title, summary, content, category} = req.body;
     const updateFields = {
         title,
         summary,
         content,
+        category,
     };
 
     if(req.file) {
