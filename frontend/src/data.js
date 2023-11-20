@@ -1,3 +1,92 @@
+import FeatIcon1 from "../src/assets/feature-icon-1.svg";
+import FeatIcon2 from "../src/assets/feature-icon-2.svg";
+import FeatIcon3 from "../src/assets/feature-icon-3.svg";
+export const features = [
+  {
+    id: 0,
+    icon: FeatIcon1,
+    title: "Food & Homeless charity",
+    desc: "Lorem ipsum dolor sit amet, consetetur sadipscing sed diam nonumy tempor invidunt ut labore et magna aliquyam erat, sed diam voluptua.....",
+    listItems: [
+      {
+        id: 0,
+        text: "Join your hand with us for a better life",
+      },
+      {
+        id: 1,
+        text: "Join your hand with us for a better life",
+      },
+    ],
+  },
+  {
+    id: 1,
+    icon: FeatIcon2,
+    title: "Food & Homeless charity",
+    desc: "Lorem ipsum dolor sit amet, consetetur sadipscing sed diam nonumy tempor invidunt ut labore et magna aliquyam erat, sed diam voluptua.....",
+    listItems: [
+      {
+        id: 0,
+        text: "Join your hand with us for a better life",
+      },
+      {
+        id: 1,
+        text: "Join your hand with us for a better life",
+      },
+      {
+        id: 2,
+        text: "Join your hand with us for a better life",
+      },
+      {
+        id: 3,
+        text: "children where we are able to fulfill all",
+      },
+    ],
+  },
+  {
+    id: 2,
+    icon: FeatIcon3,
+    title: "Food & Homeless charity",
+    desc: "Lorem ipsum dolor sit amet, consetetur sadipscing sed diam nonumy tempor invidunt ut labore et magna aliquyam erat, sed diam voluptua.....",
+    listItems: [
+      {
+        id: 0,
+        text: "Join your hand with us for a better life",
+      },
+      {
+        id: 1,
+        text: "Join your hand with us for a better life",
+      },
+      {
+        id: 2,
+        text: "Join your hand with us for a better life",
+      },
+      {
+        id: 3,
+        text: "children where we are able to fulfill all",
+      },
+    ],
+  },
+];
+export const galleryImgs = [
+  {
+    link: "https://images.pexels.com/photos/1686463/pexels-photo-1686463.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  },
+  {
+    link: "https://images.pexels.com/photos/2883380/pexels-photo-2883380.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  },
+  {
+    link: "https://images.pexels.com/photos/1108821/pexels-photo-1108821.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  },
+  {
+    link: "https://images.pexels.com/photos/1866654/pexels-photo-1866654.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  },
+  {
+    link: "https://images.pexels.com/photos/19003600/pexels-photo-19003600/free-photo-of-african-children-on-a-field-in-black-and-white.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  },
+  {
+    link: "https://images.pexels.com/photos/4314674/pexels-photo-4314674.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  },
+];
 export const teamMembers = [
   {
     id: 0,

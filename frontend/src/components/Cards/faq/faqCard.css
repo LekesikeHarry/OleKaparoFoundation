@@ -1,0 +1,27 @@
+.faqCard {
+  width: 20em;
+  height: 12em;
+  border: 1px solid #0000001f;
+  background: #edf7f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1em;
+  padding: 1em;
+}
+.faqCard > h4 {
+  font-family: Playfair Display;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+}
+.faqCard > p {
+  color: #555;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}

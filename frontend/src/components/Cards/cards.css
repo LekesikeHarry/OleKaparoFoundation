@@ -1,0 +1,21 @@
+.contactInfoCard {
+  width: 20%;
+  height: 100%;
+  background: #edf7f5;
+  border: 1px solid #0000001f;
+  padding: 1em;
+  margin: 8.5em 0 0;
+}
+.innerContactCard {
+  margin: 1.5em 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.addressDetails {
+  line-height: 2em;
+}
+.addressDetails > p {
+  font-weight: bold;
+  font-family: Montserrat;
+}

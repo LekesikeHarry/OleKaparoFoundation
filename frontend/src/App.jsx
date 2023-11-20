@@ -11,27 +11,30 @@ import SingleWorksPage from "./pages/OurWorks/SingleWorksPage";
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
 import Blogs from "./pages/Blog/Blogs";
 import Spinner from "./components/animations/Spinner";
+import ContactUs from "./pages/ContactUs/ContactUs";
+import Faq from "./pages/Faq/Faq";
+// data query
+import {
+  QueryClient,
+  QueryClientProvider,
+  useQuery,
+} from "@tanstack/react-query";
+import Register from "./pages/Login&Registration/Register";
 
-// lazy load
+//react-query
+const queryClient = new QueryClient();
+
+// lazy load HOMEPAGE
 
 const HomePage = lazy(
   () =>
     new Promise((resolve, reject) =>
-      setTimeout(() => resolve(import("./pages/Home/Home")), 5000)
+      setTimeout(() => resolve(import("./pages/Home/Home")), 3000)
     )
 );
 
 function App() {
-  // const [posts, setPosts] = useState({});
-  // useEffect(() => {
-  //   const getPosts = async () => {
-  //     const res = await axios.get("http://localhost:4000/api/posts/");
-  //     setPosts(res.data);
-  //   };
-  //   getPosts();
-  // }, []);
-
-  // console.log(posts);
+  //router
   const router = createBrowserRouter([
     {
       path: "/",
@@ -48,15 +51,23 @@ function App() {
         },
         {
           path: "/our-work",
-          element: <OurWorksPage worksData={worksData} />,
+          element: <OurWorksPage />,
         },
         {
           path: "/blogs",
-          element: <Blogs worksData={worksData} />,
+          element: <Blogs />,
         },
         {
           path: "/our-work/:worksId",
-          element: <SingleWorksPage data={worksData} />,
+          element: <SingleWorksPage />,
+        },
+        {
+          path: "/contact-us",
+          element: <ContactUs />,
+        },
+        {
+          path: "/faq",
+          element: <Faq />,
         },
       ],
     },
@@ -65,15 +76,17 @@ function App() {
       element: <Login />,
     },
     {
-      path: "/error",
-      element: <ErrorPage />,
+      path: "/register",
+      element: <Register />,
     },
   ]);
 
   return (
-    <Suspense fallback={<Spinner />}>
-      <RouterProvider router={router} />
-    </Suspense>
+    <QueryClientProvider client={queryClient}>
+      <Suspense fallback={<Spinner />}>
+        <RouterProvider router={router} />
+      </Suspense>
+    </QueryClientProvider>
   );
 }
 

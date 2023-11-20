@@ -1,9 +1,14 @@
 import React from "react";
 import "../homeStyles/works.css";
 import Carousel from "../../../components/Carousel/Carousel";
-import { worksData } from "../../../data";
+import usePostsQuery from "../../../utils/PostQuery";
 
 const OurWork = () => {
+  const { isPending, error, data, isFetching } = usePostsQuery();
+
+  if (isPending) return "Loading...";
+
+  if (error) return "An error has occurred: " + error.message;
   return (
     <section className="ourWorkSection">
       <div className="worksTop">
@@ -26,7 +31,7 @@ const OurWork = () => {
       </div>
 
       <div className="worksInnerContainer">
-        <Carousel data={worksData} buttonTxt="Donate Now!" />{" "}
+        <Carousel data={data} buttonTxt="Donate Now!" />{" "}
       </div>
     </section>
   );

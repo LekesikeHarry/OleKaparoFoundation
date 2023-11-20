@@ -13,19 +13,28 @@ const FooterLinks = [
     links: [
       {
         id: 0,
-        link: "Home",
+        title: "Home",
+        link: "/",
       },
       {
         id: 1,
-        link: "About Us",
+        title: "About Us",
+        link: "/about",
       },
       {
         id: 2,
-        link: "Blog Post",
+        title: "Blogs",
+        link: "/blogs",
       },
       {
         id: 3,
-        link: "Photo Gallery",
+        title: "Our Works",
+        link: "/our-work",
+      },
+      {
+        id: 4,
+        title: "FAQ's",
+        link: "/faq",
       },
     ],
   },
@@ -35,11 +44,13 @@ const FooterLinks = [
     links: [
       {
         id: 0,
-        link: "Contact Us",
+        title: "Contacts",
+        link: "/contact-us",
       },
       {
         id: 1,
-        link: "Our Services",
+        title: "Our Services",
+        link: "/about",
       },
     ],
   },
@@ -49,7 +60,8 @@ const FooterLinks = [
     links: [
       {
         id: 0,
-        link: "Nairobi, Kenya",
+        title: "Nairobi, Kenya",
+        link: "/about-us",
       },
     ],
   },
@@ -92,8 +104,8 @@ const Footer = () => {
                 <ul>
                   {item.links.map((i) => {
                     return (
-                      <Link key={i.id} className="link">
-                        {i.link}
+                      <Link key={i.id} to={i.link} className="link">
+                        {i.title}
                       </Link>
                     );
                   })}

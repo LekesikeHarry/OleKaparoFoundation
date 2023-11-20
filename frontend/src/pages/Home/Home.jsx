@@ -16,7 +16,12 @@ export default function Home({ data }) {
       <Charity />
       <OurWork />
       <Testimonials />
-      <Stats />
+      <Stats
+        data={{
+          title: "Our Fun Facts",
+          subTitle: " We Believe that We can Save More Lifes with you",
+        }}
+      />
       <Teams />
       <Articles />
     </>
