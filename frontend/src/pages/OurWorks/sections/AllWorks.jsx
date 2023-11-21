@@ -26,7 +26,7 @@ const AllWorks = ({ data, blogTitle }) => {
             return (
               <>
                 <div className="worksCard" key={item._id}>
-                  <img src={item.image} alt="our-works-image" loading="lazy" />
+                  <img src={`http://localhost:4000/${item.image}`} alt="our-works-image" loading="lazy" />
 
                   <div className="cardDesc">
                     <p
