@@ -5,7 +5,9 @@ const usePostsQuery = () => {
   return useQuery({
     queryKey: ["posts"],
     queryFn: () =>
-      axios.get("http://localhost:4000/api/posts").then((res) => res.data),
+      axios
+        .get("https://ole-kaparo-foundation-backend.vercel.app/api/posts")
+        .then((res) => res.data),
   });
 };
 
