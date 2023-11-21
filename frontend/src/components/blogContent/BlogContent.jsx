@@ -66,11 +66,8 @@ const BlogContent = ({ data }) => {
         <div className="subSection">
           <h4>{data.title}</h4>
 
-          <p dangerouslySetInnerHTML={{__html:data.content}}/>
+          <p dangerouslySetInnerHTML={{ __html: data.content }} />
         </div>
-      
-         </div>
-
       </div>
     </>
   );
