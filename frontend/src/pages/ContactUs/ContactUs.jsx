@@ -1,7 +1,7 @@
 import React from "react";
 import "./contact.css";
 import Hero2 from "../Home/sections/Hero2";
-import ContactSection from "./sections/contactSection";
+import ContactSection from "./sections/ContactSection";
 const ContactUs = () => {
   return (
     <>
